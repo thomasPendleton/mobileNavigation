@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.text {
+  text-transform: uppercase;
+}
+
+.logo {
+  width: 240px;
+}
+
+.nav-btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.open-btn {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav.visible {
+  transform: translateX(0);
+}
+
+.nav-black.visible {
+  transition-delay: 0.2s;
+}
+
+.nav-black {
+  background-color: #3c4043;
+  width: 95%;
+  padding: 40px;
+  position: relative;
+  transition-delay: 0s;
+}
+.nav-red.visible {
+  transition-delay: 0.1s;
+}
+.nav-red {
+  background-color: #fc4a1f;
+  width: 95%;
+  transition-delay: 0.1s;
+}
+.nav-purple.visible {
+  transition-delay: 0s;
+}
+.nav-purple {
+  background-color: #ac0d57;
+  width: 60%;
+  max-width: 450px;
+  min-width: 320px;
+  transition-delay: 0.2s;
+}
+
+.close-btn {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  opacity: 0.3;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list li {
+  margin: 20px 0;
+}
+
+.list li a {
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.list ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
